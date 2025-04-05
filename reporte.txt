@@ -1,0 +1,18 @@
+Reporte de Ventas
+=================
+Total de ventas por mes:
+Mes Abril: 750
+Mes Noviembre: 3000
+Mes Marzo: 2300
+Mes Mayo: 850
+Mes Febrero: 3200
+Mes Diciembre: 1080
+Mes Junio: 1100
+Mes Octubre: 240
+Mes Julio: 750
+Mes Enero: 5320
+Mes Agosto: 1700
+Mes Septiembre: 400
+Producto más vendido: Tostadora
+Monto total anual: 20690
+Cliente más frecuente: Sofía

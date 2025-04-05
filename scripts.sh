@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Archivo CSV
-archivo_csv="Datos.csv"
+archivo_csv="/workspaces/Programaci-n-de-Scripts-Para-qu-/Datos.csv"
 
 # Inicializar variables
 declare -A ventas_por_mes
@@ -51,12 +51,12 @@ cliente_mas_frecuente=$(for cliente in "${!clientes_frecuentes[@]}"; do
 done | sort -k2 -nr | head -n1 | awk '{print $1}')
 
 # Crear reporte
-echo "Reporte de Ventas" > reporte.txt
-echo "=================" >> reporte.txt
-echo "Total de ventas por mes:" >> reporte.txt
+echo "Reporte de Ventas" > /workspaces/Programaci-n-de-Scripts-Para-qu-/reporte.txt
+echo "=================" >> /workspaces/Programaci-n-de-Scripts-Para-qu-/reporte.txt
+echo "Total de ventas por mes:" >> /workspaces/Programaci-n-de-Scripts-Para-qu-/reporte.txt
 for mes in "${!ventas_por_mes[@]}"; do
-    echo "Mes $mes: ${ventas_por_mes[$mes]}" >> reporte.txt
+    echo "Mes $mes: ${ventas_por_mes[$mes]}" >> /workspaces/Programaci-n-de-Scripts-Para-qu-/reporte.txt
 done
-echo "Producto más vendido: $producto_mas_vendido" >> reporte.txt
-echo "Monto total anual: $monto_total_anual" >> reporte.txt
-echo "Cliente más frecuente: $cliente_mas_frecuente" >> reporte.txt
+echo "Producto más vendido: $producto_mas_vendido" >> /workspaces/Programaci-n-de-Scripts-Para-qu-/reporte.txt
+echo "Monto total anual: $monto_total_anual" >> /workspaces/Programaci-n-de-Scripts-Para-qu-/reporte.txt
+echo "Cliente más frecuente: $cliente_mas_frecuente" >> /workspaces/Programaci-n-de-Scripts-Para-qu-/reporte.txt
